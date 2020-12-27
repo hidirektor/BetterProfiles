@@ -1,0 +1,20 @@
+name: BetterProfiles
+main: com.alonsoaliaga.betterprofiles.BetterProfiles
+version: 1.4-BETA
+author: AlonsoAliaga
+api-version: 1.13
+description: An amazing way to display players profiles to others.
+depend:
+- NBTAPI
+softdepend:
+- PlaceholderAPI
+- ProtocolLib
+- Vault
+- BetterRevive
+commands:
+#  betterprofiles:
+#    description: BetterProfiles main command.
+#    aliases: ["bprofiles","bprofile","betterprofile"]
+#  profile:
+#    description: Profile command.
+#    aliases: []

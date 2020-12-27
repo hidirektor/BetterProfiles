@@ -1,0 +1,99 @@
+package com.alonsoaliaga.betterprofiles.others;
+
+import org.bukkit.Sound;
+
+public enum Sounds {
+   ANVIL_LAND(new String[]{"ANVIL_LAND", "BLOCK_ANVIL_LAND"}),
+   ANVIL_BREAK(new String[]{"ANVIL_BREAK", "BLOCK_ANVIL_BREAK"}),
+   ANVIL_USE(new String[]{"ANVIL_USE", "BLOCK_ANVIL_USE"}),
+   ANVIL_PLACE(new String[]{"ANVIL_LAND", "BLOCK_ANVIL_PLACE"}),
+   ITEM_BREAK(new String[]{"ITEM_BREAK", "ENTITY_ITEM_BREAK"}),
+   PICKUP(new String[]{"ITEM_PICKUP", "ENTITY_ITEM_PICKUP"}),
+   ARROW_HIT(new String[]{"ARROW_HIT", "ENTITY_ARROW_HIT_PLAYER"}),
+   LEVEL_UP(new String[]{"LEVEL_UP", "ENTITY_PLAYER_LEVELUP"}),
+   GLASS_BREAK(new String[]{"GLASS", "BLOCK_GLASS_BREAK"}),
+   GRAVE_BREAK(new String[]{"DIG_GRAVEL", "BLOCK_GRAVEL_BREAK"}),
+   GRAVEL_PLACE(new String[]{"DIG_GRAVEL", "BLOCK_GRAVEL_PLACE"}),
+   LAVA_POP(new String[]{"LAVA_POP", "BLOCK_LAVA_POP", "BLOCK_LAVA_POP"}),
+   SLIME_PLACE(new String[]{"SLIME_ATTACK", "BLOCK_SLIME_BLOCK_PLACE"}),
+   PLAYER_BURP(new String[]{"BURP", "ENTITY_PLAYER_BURP"}),
+   PLAYER_HURT(new String[]{"SUCCESSFUL_HIT", "ENTITY_PLAYER_HURT"}),
+   SLIME_JUMP(new String[]{"SLIME_WALK", "ENTITY_SLIME_JUMP"}),
+   CLICK_ON(new String[]{"WOOD_CLICK", "BLOCK_WOOD_BUTTON_CLICK_ON", "BLOCK_WOODEN_BUTTON_CLICK_ON"}),
+   CLICK_OFF(new String[]{"WOOD_CLICK", "BLOCK_WOOD_BUTTON_CLICK_OFF", "BLOCK_WOODEN_BUTTON_CLICK_OFF"}),
+   FIREWORK_LAUNCH(new String[]{"FIREWORK_LAUNCH ", "ENTITY_FIREWORK_ROCKET_LAUNCH"}),
+   EXPLODE(new String[]{"EXPLODE", "ENTITY_GENERIC_EXPLODE"}),
+   WATER(new String[]{"WATER", "BLOCK_WATER_AMBIENT"}),
+   VILLAGER_IDLE(new String[]{"VILLAGER_IDLE", "ENTITY_VILLAGER_AMBIENT"}),
+   FIRE(new String[]{"FIRE", "BLOCK_FIRE_AMBIENT"}),
+   SUCCESSFUL_HIT(new String[]{"SUCCESSFUL_HIT", "ENTITY_PLAYER_ATTACK_STRONG"}),
+   EXP_ORB(new String[]{"ORB_PICKUP", "ENTITY_EXPERIENCE_ORB_PICKUP"}),
+   BLAZE_HURT(new String[]{"BLAZE_HIT", "ENTITY_BLAZE_HURT"}),
+   ENDER_DRAGON(new String[]{"ENDERDRAGON_GROWL", "ENTITY_ENDERDRAGON_GROWL", "ENTITY_ENDER_DRAGON_GROWL"}),
+   ENDERMAN_TELEPORT(new String[]{"ENDERMAN_TELEPORT", "ENTITY_ENDERMEN_TELEPORT", "ENTITY_ENDERMAN_TELEPORT"}),
+   CHEST_OPEN(new String[]{"CHEST_OPEN", "ENTITY_CHEST_OPEN", "BLOCK_CHEST_OPEN"}),
+   CHEST_CLOSE(new String[]{"CHEST_CLOSE", "ENTITY_CHEST_CLOSE", "BLOCK_CHEST_CLOSE"}),
+   LAVA(new String[]{"LAVA", "BLOCK_LAVA_AMBIENT"}),
+   BREWING(new String[]{"LAVA", "BLOCK_BREWING_STAND_BREW"}),
+   DOOR_OPEN(new String[]{"DOOR_OPEN", "BLOCK_WOODEN_DOOR_OPEN"}),
+   DOOR_CLOSE(new String[]{"DOOR_CLOSE", "BLOCK_WOODEN_DOOR_CLOSE"}),
+   COW_IDLE(new String[]{"COW_IDLE", "ENTITY_COW_AMBIENT"}),
+   CREEPER_HURT(new String[]{"CREEPER_HISS", "ENTITY_CREEPER_HURT"}),
+   IRONGOLEM_HIT(new String[]{"IRONGOLEM_HIT", "ENTITY_IRONGOLEM_ATTACK", "ENTITY_IRON_GOLEM_ATTACK"}),
+   IRONGOLEM_DEATH(new String[]{"IRONGOLEM_DEATH", "ENTITY_IRONGOLEM_DEATH", "ENTITY_IRON_GOLEM_DEATH"}),
+   SHEEP_IDLE(new String[]{"SHEEP_IDLE", "ENTITY_SHEEP_AMBIENT", "ENTITY_SHEEP_AMBIENT"}),
+   SHEEP_SHEAR(new String[]{"SHEEP_SHEAR", "ENTITY_SHEEP_SHEAR"}),
+   ENDERCHEST_OPEN(new String[]{"CHEST_OPEN", "BLOCK_ENDERCHEST_OPEN", "BLOCK_ENDER_CHEST_OPEN"}),
+   ENDERCHEST_CLOSE(new String[]{"CHEST_CLOSE", "BLOCK_ENDERCHEST_CLOSE", "BLOCK_ENDER_CHEST_CLOSE"}),
+   PIG_IDLE(new String[]{"PIG_IDLE", "ENTITY_PIG_AMBIENT", "ENTITY_PIG_AMBIENT"}),
+   SQUID_SQUIRT(new String[]{"SWIM", "ENTITY_SQUID_DEATH", "ENTITY_SQUID_SQUIRT"}),
+   BAT_DEATH(new String[]{"BAT_DEATH", "ENTITY_BAT_DEATH"}),
+   WOOD_BREAK(new String[]{"DIG_WOOD", "BLOCK_WOOD_BREAK"}),
+   CHICKEN_IDLE(new String[]{"CHICKEN_IDLE", "ENTITY_CHICKEN_AMBIENT"}),
+   MAGMACUBE_SQUISH(new String[]{"MAGMACUBE_JUMP", "ENTITY_MAGMACUBE_SQUISH", "ENTITY_MAGMA_CUBE_SQUISH"}),
+   WITHER_HURT(new String[]{"WITHER_HURT", "ENTITY_WITHER_AMBIENT"}),
+   ENCHANTMENT_TABLE_USE(new String[]{"PORTAL", "BLOCK_ENCHANTMENT_TABLE_USE"}),
+   CAT_MEOW(new String[]{"CAT_MEOW", "ENTITY_CAT_AMBIENT"}),
+   ZOMBIE_IDLE(new String[]{"ZOMBIE_IDLE", "ENTITY_ZOMBIE_AMBIENT"}),
+   SILVERFISH_IDLE(new String[]{"SILVERFISH_IDLE", "ENTITY_SILVERFISH_AMBIENT"}),
+   SPLASH(new String[]{"SPLASH", "ENTITY_SPLASH_POTION_BREAK"}),
+   DRINK(new String[]{"DRINK", "ENTITY_GENERIC_DRINK"}),
+   WITHER_SPAWN(new String[]{"WITHER_SPAWN", "ENTITY_WITHER_SPAWN"}),
+   WOLF_GROWL(new String[]{"WOLF_GROWL", "ENTITY_WOLF_AMBIENT"}),
+   WOLF_BARK(new String[]{"WOLF_BARK", "ENTITY_WOLF_GROWL"}),
+   TOTEM_USE(new String[]{"ITEM_TOTEM_USE", "WITHER_DEATH", "ENTITY_WITHER_DEATH"}),
+   CHICKEN_EGG_POP(new String[]{"CHICKEN_EGG_POP", "ENTITY_CHICKEN_EGG"}),
+   RABBIT_IDLE(new String[]{"HORSE_LAND", "ENTITY_RABBIT_AMBIENT"});
+
+   private Sound sound = null;
+
+   private Sounds(String... names) {
+      String[] var4 = names;
+      int var5 = names.length;
+      int var6 = 0;
+
+      while(var6 < var5) {
+         String name = var4[var6];
+
+         try {
+            this.sound = Sound.valueOf(name);
+            break;
+         } catch (Exception var9) {
+            ++var6;
+         }
+      }
+
+   }
+
+   public Sound getSound() {
+      return this.sound;
+   }
+
+   public static Sounds valueFrom(String string) {
+      try {
+         return valueOf(string);
+      } catch (IllegalArgumentException var2) {
+         return null;
+      }
+   }
+}
